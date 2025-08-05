@@ -1,0 +1,19 @@
+{
+  "name": "@workspace/backend",
+  "type": "module",
+  "scripts": {
+    "dev": "convex dev",
+    "setup": "convex dev --until-success"
+  },
+  "exports": {
+    "./convex": "./convex/*.(ts|js)"
+  },
+  "devDependencies": {
+    "@workspace/typescript-config": "workspace:*",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "convex": "^1.25.4"
+  }
+}
